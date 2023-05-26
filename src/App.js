@@ -1,25 +1,19 @@
 import logo from './logo.svg';
 import './App.scss';
 import MyComponent from './views/Example/MyComponent';
+import FormComponent from './views/Example/FormComponent';
 
 
 
-/* 
-*
- */
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h2>Thanh Ngan </h2>
-        <MyComponent>
-
-        </MyComponent>
-
-
-
+        <FormComponent />
       </header>
+
     </div>
   );
 }
