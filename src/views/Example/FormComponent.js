@@ -1,10 +1,16 @@
 import React from "react";
+import ChildComponent from "./ChildComponent";
 
 class FormComponent extends React.Component {
     state = {
         firstName: '',
-        lastName: ''
+        lastName: '',
+        arrJob: [
+            { id: 'abcJob1', title: 'Developer', salary: '5000' },
+            { id: 'abcJob2', title: 'Testers', salary: '400' },
+            { id: 'abcJob3', title: 'Project managers', salary: '400' },
 
+        ]
     }
 
     handleOnChangeFirstName = (event) => {
@@ -38,6 +44,12 @@ class FormComponent extends React.Component {
                     <input type="text" onChange={(event) => this.handleOnchangeLastName(event)} value={this.state.lastName} /><br /><br />
                     <input type="submit" value="Submit" onClick={(event) => this.handleSubmit(event)} />
                 </form>
+                <ChildComponent name={'child one'}
+                    age={'25'}
+                    arrJob={this.state.arrJob}
+                />
+
+
             </>
         )
 
