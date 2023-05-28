@@ -12,6 +12,13 @@ class ChildComponent extends React.Component {
         })
     }
 
+    handleOnclickDelelte = (job) => {
+        console.log(job);
+
+
+
+    }
+
 
     render() {
         console.log('check props', this.props);
@@ -33,7 +40,10 @@ class ChildComponent extends React.Component {
                                 arrJob.map((item, index) => {
                                     return (
                                         <div key={item.id}>
-                                            {item.title} - {item.salary}
+                                            {item.title} - {item.salary}  <></>
+                                            <span onClick={() => { this.handleOnclickDelelte(item) }}>x</span>
+
+
                                         </div>
                                     )
 

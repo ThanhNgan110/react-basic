@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.scss';
-import MyComponent from './views/Example/MyComponent';
+
 import FormComponent from './views/Example/FormComponent';
 
 

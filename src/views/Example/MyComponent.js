@@ -17,6 +17,9 @@ class MyComponent extends React.Component {
         })
     }
 
+
+
+
     render() {
         console.log('Call render', this.state);
         return (
